@@ -210,7 +210,7 @@ function fin(gagne) {
     record = Math.max(score, Number(localStorage.getItem('record-coeurs')) || 0);
     localStorage.setItem('record-coeurs', record);
   } catch (e) {}
-  $('finTitre').textContent = gagne ? 'Bocal rempli !' : 'Bravo ! Ton prix : un câlin illimité, valable à vie ♥';
+  $('finTitre').textContent = gagne ? 'Bocal rempli ! Tu as gagné des calins gratuits à vie !!' : 'Ho nooooooon...';
   $('finTexte').textContent = gagne
     ? "Tu as attrapé tous mes cœurs. De toute façon, ils étaient déjà à toi ♥"
     : "Les cœurs brisés t'ont eu… mais le mien, tu l'auras toujours ♥";
