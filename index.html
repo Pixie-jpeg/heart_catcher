@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Attrape mes cœurs 💘</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="jeu"></canvas>
+
+<div class="hud">
+  <span><span id="score">0</span> / <span id="objectif">50</span> ♥</span>
+  <span id="vies">♥♥♥</span>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<section class="ecran" id="debut">
+  <h1>Attrape mes cœurs</h1>
+  <p>Déplace le bocal pour attraper les cœurs ♥<br>
+     Les dorés valent 3 points.<br>
+     Évite les cœurs brisés 💔</p>
+  <button class="btn" id="jouer">Jouer</button>
+    <p class="petit">Sur ordi : flèches ou souris<br>Sur téléphone : glisse le doigt</p>
+</section>
+
+<section class="ecran cache" id="fin">
+  <h1 id="finTitre"></h1>
+  <p class="mot" id="finTexte"></p>
+  <p class="petit" id="record"></p>
+  <button class="btn" id="rejouer">Rejouer</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
